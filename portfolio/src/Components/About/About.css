@@ -1,0 +1,50 @@
+
+.about {
+  min-height: 400px;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #1e293b;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #38bdf8;
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+.about p {
+  max-width: 750px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 6%;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
